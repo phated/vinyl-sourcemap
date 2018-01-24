@@ -32,6 +32,7 @@
     "normalize-path": "^2.1.1",
     "now-and-later": "^2.0.0",
     "remove-bom-buffer": "^3.0.0",
+    "through2": "^2.0.3",
     "vinyl": "^2.0.0"
   },
   "devDependencies": {

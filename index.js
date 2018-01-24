@@ -47,11 +47,6 @@ function write(file, destPath, callback) {
     return callback(new Error(PLUGIN_NAME + '-write: Not a vinyl file'));
   }
 
-  // Bail early with an error if file has streaming contents
-  if (file.isStream()) {
-    return callback(new Error(PLUGIN_NAME + '-write: Streaming not supported'));
-  }
-
   // Bail early successfully if file is null or doesn't have sourcemap
   if (file.isNull() || !file.sourceMap) {
     return callback(null, file);
